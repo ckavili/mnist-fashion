@@ -72,7 +72,7 @@ def train_func_distributed():
 
 
 # For GPU Training, set `use_gpu` to True.
-use_gpu = True
+use_gpu = False
 
 # To learn more about configuring S3 compatible storage check out our docs -> https://github.com/project-codeflare/codeflare-sdk/blob/main/docs/s3-compatible-storage.md
 trainer = TorchTrainer(
