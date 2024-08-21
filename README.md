@@ -4,15 +4,11 @@ Using Distributed Training capability to train the model.
 
 ## 🏃‍➡️ How to run?
 
-1) Log in to OpenShift AI and create a Data Science Project. 
+1) Log in to OpenShift AI and get your own Data Science Project. 
 
-2) Create a Workbench by using `Pytorch` image.
+2) Run the first Notebook [0_basic_ray.ipynb](./0_basic_ray.ipynb) to verify that you are able to create a RayCluster. 
 
-3) Clone this repository into your Workbench.
-
-4) Run the first Notebook [0_basic_ray.ipynb](./0_basic_ray.ipynb) to verify that you are able to create a RayCluster. 
-
-5) Run the second Notebook [1_cluster_job_client.ipynb](./1_cluster_job_client.ipynb) to train the model by leveraging distributed training capability. It might take some time for the submitted job to switch from Pending state to Running state. 
+3) Run the second Notebook [1_cluster_job_client.ipynb](./1_cluster_job_client.ipynb) to train the model by leveraging distributed training capability. It might take some time for the submitted job to switch from Pending state to Running state. 
 
 You need to get similar logs as below and see in the logs `Training started without custom configuration.` which means the training job successfully started 🎉🙌
 
