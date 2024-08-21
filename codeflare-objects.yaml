@@ -1,3 +1,14 @@
+#LocalQueue
+--- 
+apiVersion: kueue.x-k8s.io/v1beta1
+kind: LocalQueue
+metadata:
+  annotations:
+    kueue.x-k8s.io/default-queue: 'true'
+  name: local-queue
+spec:
+  clusterQueue: cluster-queue
+
 #ClusterQueue
 ---
 apiVersion: kueue.x-k8s.io/v1beta1
@@ -30,18 +41,6 @@ spec:
             - name: nvidia.com/gpu
               nominalQuota: 0
   stopPolicy: None
-
-#LocalQueue
---- 
-apiVersion: kueue.x-k8s.io/v1beta1
-kind: LocalQueue
-metadata:
-  annotations:
-    kueue.x-k8s.io/default-queue: 'true'
-  name: local-queue-test
-  namespace: ray-testing
-spec:
-  clusterQueue: cluster-queue
 
 #ResourceFlavor
 ---
