@@ -24,3 +24,8 @@ To visualize your results with TensorBoard, run: `tensorboard --logdir /tmp/ray/
 
 Training started without custom configuration.
 ```
+
+You can use OpenShift AI's Distributed Workload Metrics UI to verify the resource consumption of your running job.
+
+Alternatively, you can check Ray Dashboard to see the status as well.
+ 
