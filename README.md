@@ -1,6 +1,8 @@
 ## 👗 Fashion-MNIST 
 
-Using Distributed Training capability to train the model. 
+👒 Here is the context for you: We have Fashion-MNIST dataset - Zalando's article images—consisting of a training set of 60,000 examples and a test set of 10,000 examples.
+
+Our code trains a neural network on the dataset to classify clothing images into 10 categories (such as trouser, shirt, bag..). By using Distributed Training, we splits the workload across multiple CPU workers to speed up training and handle this large dataset.
 
 ## 🏃‍➡️ How to run?
 
@@ -29,3 +31,5 @@ You can use OpenShift AI's Distributed Workload Metrics UI to verify the resourc
 
 Alternatively, you can check Ray Dashboard to see the status as well.
  
+
+4) The job should take about 10-15 minutes. When you are done with it, please shut down the Ray Cluster to save some resources. Thank you! 🙏
