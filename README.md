@@ -31,4 +31,4 @@ You can use OpenShift AI's Distributed Workload Metrics UI to see what is happen
 
 Alternatively, you can check Ray Dashboard to see the status as well.
 
-4) The job should take about 10-15 minutes. When you are done with it, please shut down the Ray Cluster to save some resources. Thank you! 🙏
+4) The job should take about 10-15 minutes. When you are done with it, can you please make sure to save some resources. Thank you! 🙏
