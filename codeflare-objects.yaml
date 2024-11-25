@@ -5,7 +5,7 @@ kind: LocalQueue
 metadata:
   annotations:
     kueue.x-k8s.io/default-queue: 'true'
-  name: local-queue
+  name: mnist-local-queue
 spec:
   clusterQueue: cluster-queue
 
