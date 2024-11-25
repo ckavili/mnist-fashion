@@ -1,13 +1,9 @@
-#LocalQueue
---- 
+#ResourceFlavor
+---
 apiVersion: kueue.x-k8s.io/v1beta1
-kind: LocalQueue
-metadata:
-  annotations:
-    kueue.x-k8s.io/default-queue: 'true'
-  name: mnist-local-queue
-spec:
-  clusterQueue: cluster-queue
+kind: ResourceFlavor
+  name: default-flavor
+spec: {}
 
 #ClusterQueue
 ---
@@ -42,9 +38,13 @@ spec:
               nominalQuota: 0
   stopPolicy: None
 
-#ResourceFlavor
----
+#LocalQueue
+--- 
 apiVersion: kueue.x-k8s.io/v1beta1
-kind: ResourceFlavor
-  name: default-flavor
-spec: {}
+kind: LocalQueue
+metadata:
+  annotations:
+    kueue.x-k8s.io/default-queue: 'true'
+  name: mnist-local-queue
+spec:
+  clusterQueue: cluster-queue

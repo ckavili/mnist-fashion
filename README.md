@@ -6,9 +6,9 @@ Our code trains a neural network on the dataset to classify clothing images into
 
 ## 🏃‍➡️ How to run?
 
-1) Log in to OpenShift AI and get your own Data Science Project. 
+1) Log in to OpenShift AI and go to a Data Science Project. 
 
-2) Run the first Notebook [0_basic_ray.ipynb](./0_basic_ray.ipynb) to verify that you are able to create a RayCluster. 
+2) Run the first Notebook [0_basic_ray.ipynb](./0_basic_ray.ipynb) to verify that you are able to create a RayCluster.
 
 3) Run the second Notebook [1_cluster_job_client.ipynb](./1_cluster_job_client.ipynb) to train the model by leveraging distributed training capability. It might take some time for the submitted job to switch from Pending state to Running state. 
 
